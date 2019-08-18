@@ -14,19 +14,31 @@ class FirstController extends \yii\web\Controller {
 
     public function actionPage2() {
         $hello = "Hello World";
-        $a=5;
-        $b=3;
-        $c=$a+$b;
+        $a = 5;
+        $b = 3;
+        $c = $a + $b;
         return $this->render("page2", [
                     'hello' => $hello,
-                    'x'=>$a,
-                    'b'=>$b,
-              'c'=>$c
+                    'x' => $a,
+                    'b' => $b,
+                    'c' => $c
         ]);
     }
-    public function actionPage3(){
-        return $this->render("page3");
+
+    public function actionPage3() {
+        return $this->render('page3');
     }
-        
-  
+
+    public function actionPage4(
+    $xname = null,
+    $yname = null
+    ) {
+        $fname = $xname;
+        $lname = $yname;
+        $name = $fname . " " . $lname;
+        return $this->render('page4', [
+                    'name' => $name,
+        ]);
+    }
+
 }
