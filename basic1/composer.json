@@ -23,7 +23,11 @@
         "yiisoft/yii2-debug": "~2.1.0",
         "yiisoft/yii2-gii": "~2.1.0",
         "yiisoft/yii2-faker": "~2.0.0",
-
+         "miloschuman/yii2-highcharts-widget": "dev-master",
+         "kartik-v/yii2-grid": "@dev",
+        "kartik-v/yii2-krajee-bass": "@dev",
+        "kartik-v/yii2-mpdf": "@dev",
+  
         "codeception/base": "~2.3.0",
         "codeception/verify": "~0.4.0",
         "codeception/specify": "~0.4.6",

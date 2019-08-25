@@ -8,9 +8,14 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
+/* สองบรรทัดเก่า
 use app\assets\AppAsset;
-
 AppAsset::register($this);
+*/
+use app\assets\MaterialAsset;
+
+MaterialAsset::register($this);
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -32,8 +37,11 @@ AppAsset::register($this);
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
+         
+      //  'class' => 'navbar-inverse navbar-fixed-top',
+      //   'class' => 'navbar-warning navbar-fixed-top',
+             'class' => 'navbar-default navbar-fixed-top',
+            ],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
